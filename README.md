@@ -1,0 +1,2 @@
+# Polimi Courses
+This repository is made solely to store and catalog all of the courses materials and notes taken during all lectures: it does not inlcude personal projects assignments or their implementations (see other repositories). Feel free to reach out if some materials are wrong or for asking for removal of said materials.
