@@ -1,0 +1,58 @@
+How can we define what is a secure system? 
+Usually, it follows the \textbf{CIA} paradigm to correctly define what a 
+secure system is, the problem lies inside its definition:
+\begin{itemize}
+    \item \textbf{Confidentiality} - the system should not leak information to 
+        unauthorized parties.
+    \item \textbf{Integrity} - the system should not allow unauthorized parties 
+        to modify data \textbf{and} should not allow authorized parties 
+        to modify data in an unauthorized way.
+    \item \textbf{Availability} - information should be always available 
+        to authorized parties.
+\end{itemize}
+The problem lies inside \textbf{Integrity}, if deciding whether a party is
+authorized or not is simple since it's a binary decision, the decision of
+whether a modification is authorized or not is much more complex and involves
+a lot of factors. Also, \textbf{Availability} is what pays off in the end.
+What can we consider \textbf{secure}? Something is secured if it takes
+an \textbf{effort} to break it: the more effort it takes, the more secure 
+it is.
+\begin{key}{Secure System}
+    A \textbf{Secure System} is a system that requires a lot of effort to be 
+    broken.
+\end{key}
+\subsection{Key concepts}
+We firslty need some definitions useful to understand the world of security:
+\begin{itemize}
+    \item \textbf{Vulnerability} - It is a shortcut that allows an attacker
+        to break the system with less of the intended effort: it is something 
+        that allows to violate one of the CIA properties.
+    \item \textbf{Exploit} - It is a specific way to use one or more
+        vulnerabilities to accomplish a specific objective that violates
+        one of the CIA properties.
+    \item \textbf{Asset}
+    \item \textbf{Threat}
+    \item \textbf{Risk}
+\end{itemize}
+\begin{warning}{Understanding what is and what isn't a vulnerability}
+    Not all vulnerabilities lookalikes are actual vulnerabilities:
+    sometimes, something looks vulnerable but the accomplishment of the 
+    attack doesn't result in a violation of the CIA properties.  
+\end{warning}
+\subsubsection{Example: exploiting a vulnerability}
+When exploiting a vulnerability, we firstly need to find the security assumption
+that lays behind the system: in this example, the thing that ensures that the
+lock works is the fact that the pins are being pushed down always by the
+strings of the lock, so the only way to open the lock is to push up all the 
+pins at the same time. Lockpicking is using a vulnerability of the lock to
+open it: this is using an \textbf{exploit}, using something to take advantage
+of a vulnerability to break the system.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{Images/1Lockpicking.png}
+    \caption{Lockpicking example}
+\end{figure}
+How can we resolve this vulnerability? Short answer: we make it harder to exploit
+it. Oiled locks are harder to exploit because of the deletion of friction, but
+still are vulnerable: some vulnerabilities are implicit in the design
+of the system itself.
