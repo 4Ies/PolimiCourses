@@ -35,24 +35,129 @@ We firslty need some definitions useful to understand the world of security:
     \item \textbf{Risk}
 \end{itemize}
 \begin{warning}{Understanding what is and what isn't a vulnerability}
-    Not all vulnerabilities lookalikes are actual vulnerabilities:
-    sometimes, something looks vulnerable but the accomplishment of the 
-    attack doesn't result in a violation of the CIA properties.  
+    Not all vulnerabilities lookalikes are actual vulnerabilities or mistakes
+    to exploit: sometimes, something is vulnerable but the accomplishment of 
+    the attack doesn't result in a violation of the CIA properties.  
 \end{warning}
 \subsubsection{Example: exploiting a vulnerability}
-When exploiting a vulnerability, we firstly need to find the security assumption
-that lays behind the system: in this example, the thing that ensures that the
-lock works is the fact that the pins are being pushed down always by the
-strings of the lock, so the only way to open the lock is to push up all the 
-pins at the same time. Lockpicking is using a vulnerability of the lock to
-open it: this is using an \textbf{exploit}, using something to take advantage
-of a vulnerability to break the system.
+When exploiting a vulnerability, we firstly need to find the security 
+assumption that lays behind the system: in this example, the thing that 
+ensures that the lock works is the fact that the pins are being pushed down 
+always by the strings of the lock, so the only way to open the lock is to 
+push up all the pins at the same time. Lockpicking is using a vulnerability 
+of the lock to open it: this is using an \textbf{exploit}, using something 
+to take advantage of a vulnerability to break the system.
+
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.5\textwidth]{Images/1Lockpicking.png}
+    \includegraphics[width=0.7\textwidth]{Images/1Lockpicking.png}
     \caption{Lockpicking example}
 \end{figure}
-How can we resolve this vulnerability? Short answer: we make it harder to exploit
-it. Oiled locks are harder to exploit because of the deletion of friction, but
-still are vulnerable: some vulnerabilities are implicit in the design
-of the system itself.
+
+How can we resolve this vulnerability? Short answer: we make it harder to 
+exploit it. Oiled locks are harder to exploit because of the deletion of 
+friction, but still are vulnerable: some vulnerabilities are implicit in 
+the design of the system itself.
+\subsubsection{Example: A strawman software vulnerability}
+\begin{code}{Strawman software vulnerability}
+    \begin{verbatim}
+    int i;
+    unsigned short s;
+    i = atoi(argv[1]); // parse command line parameter as int
+    if (i == 0) { // check
+        printf("Invalid number: value must be > 0\n");
+        return -1;
+    }
+    s = i;
+    if (s == 0) { //security check
+        printf("Access GRANTED!\n");
+    }
+    \end{verbatim}
+\end{code}
+Implicit casting from int to unsigned short can cause a vulnerability (in 
+this case, to have 0 in the variable \textbf{s} even if \textbf{i = 65536}).
+
+\subsection{Assets, Threats, Attacks and Threat Agents}
+\subsubsection{What is Protected and what is Secured}
+It is crucially important that it is different to say that something is 
+\textbf{safe} and that something is \textbf{protected}: something can be 
+more protected but less safe, because of the presence of specific 
+\textbf{threats} or because of its value for the individual threat (a 
+soldier is less protected but safer against a terrorist than the polititian 
+inside the ACV). The Cheyenne Mountain is protected against nuclear attacks,
+but it is not safe against rattlesnakes.
+\begin{key}{Safety agains Threats}
+    A system is protected (and safe) always against a specific threat,
+    it is of no sense to talk about the security of a system without
+    considering the threat we are trying to protect against.
+\end{key}
+\begin{warning}{Watch Out!}
+    It is total bullshit to talk about protecting a system and potential 
+    vulnerabilities without having a clear understanding of the threat models: 
+    professionals in the field of security only talk about them, 
+    not about vulnerabilities.
+\end{warning}
+
+\subsubsection{Assets}
+\begin{key}{Asset}
+    An \textbf{asset} identifies what is valuable for the organization.
+\end{key}
+We will be focusing mostly on \textbf{IT Assets}, like data, hardware and 
+software: identifying assets is key into value them from the point of view
+of an attacker. Different attackers may have a different value for our 
+different assets, it is our job to understand what could become the value 
+of our resources and the potential loss of our assets.
+
+\subsubsection{Threats and Attacks}
+\begin{key}{Threat}
+    A \textbf{threat} is a potential violation of a CIA rule and the 
+    circumstances that can lead to said violation
+\end{key}
+A threat is usually caused by an intentional attacks, caused by attack agents
+(we will not cover accidents, non intentional attacks).
+\begin{warning}{Hakers are not Attackers}
+    a Hacker is someone with an advanced understanding of computers and computer
+    networks, malicious hackers are called \textbf{black hats} 
+    (from western movies).
+\end{warning}
+
+\subsection{Risks}
+We just understood that \textbf{no system is invulnerable}: there will always
+ be a vulnerability that could become a threat to our system from a 
+ specific point of view of an attacker. The only thing we can talk about is 
+ \textbf{how exposed to damage} is our system: we are talking about 
+ \textbf{risks}.
+\begin{key}{Risk}
+    A \textbf{risk} is a statistical and economical evaluation of the exposure
+    to damage because of the presence of vulnerabilities and threats.
+\end{key}
+Risk can be defined as a mathematical formula:
+\begin{equation}
+    \text{Risk} = \text{Asset} \times \text{Vulnerabilities} \times 
+    \text{Threats}
+\end{equation}
+A big problem is that the Risk term is almost always impossible to compute: we
+hardly know the value of our assets from an attacker point of view, we have
+little information on how vulnerable our system is and mostly important we are
+never able to identify the threats our system will encounter. It is important
+to note though that Assets and Vulnerabilities are 
+\textbf{controllable variables}, the values we can actually manipulate, whereas
+Threats are \textbf{indepentent variables}, completely separated from our 
+knowledge. It becomes clearer and clearer that we need to take decisions:
+we need to balance the urge of damage containment and the reduction of 
+vulnerabilities to the costs they bring. This is \textbf{Security}.
+
+\subsection{Security versus Cost Balance}
+In security we can distinct two different costs:
+\begin{itemize}
+    \item \textbf{Direct Costs} - Management, operational and equipment
+    \item \textbf{Indirect Costs (more important)} - Less usability, slower
+    performance, less privacy, reduced productivity
+\end{itemize}
+(remember when no one locked their phones when biometrics was not a thing? 
+it was more the cost of usability than the perceived threat of having the 
+phone opened by someone else!)
+\begin{warning}{The Privacy Tradeoff Problem}
+    When the diminuition of privacy is traded with "more security", since 
+    security is composed by privacy, it means something bad is going to happen. 
+\end{warning}
