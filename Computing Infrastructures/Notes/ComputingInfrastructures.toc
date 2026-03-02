@@ -1,0 +1,17 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {1}Prefazione}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Disclaimer}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Keywords}{2}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Datacenters}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Introduction}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Hardware Infrastructures}{3}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Data Centers}{4}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}Edge, Embedded and IoT Devices}{4}{subsubsection.2.2.2}%
+\contentsline {section}{\numberline {3}Data Center as a Computer}{4}{section.3}%
+\contentsline {subsection}{\numberline {3.1}From Data Centers to Warehouse-Scale Computers...}{5}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}...and Back}{6}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Areas and Regions}{6}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Edge DataCenters}{7}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}Availability and Uptime}{8}{subsubsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.4}Architectural Overview of WSCs}{8}{subsection.3.4}%
+\contentsline {section}{\numberline {4}Storage}{9}{section.4}%
