@@ -3,7 +3,7 @@
 \contentsline {subsection}{\numberline {1.1}Disclaimer}{2}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1.2}Keywords}{2}{subsection.1.2}%
 \contentsline {section}{\numberline {2}Introduction}{2}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Key concepts}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.1}Vulnerabilities and Exploits}{2}{subsection.2.1}%
 \contentsline {subsubsection}{\numberline {2.1.1}Example: exploiting a vulnerability}{3}{subsubsection.2.1.1}%
 \contentsline {subsubsection}{\numberline {2.1.2}Example: A strawman software vulnerability}{3}{subsubsection.2.1.2}%
 \contentsline {subsection}{\numberline {2.2}Assets, Threats, Attacks and Threat Agents}{4}{subsection.2.2}%
@@ -11,4 +11,10 @@
 \contentsline {subsubsection}{\numberline {2.2.2}Assets}{4}{subsubsection.2.2.2}%
 \contentsline {subsubsection}{\numberline {2.2.3}Threats and Attacks}{4}{subsubsection.2.2.3}%
 \contentsline {subsection}{\numberline {2.3}Risks}{4}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Security versus Cost Balance}{5}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.4}Security vs Cost Balance}{5}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}More money is not more security}{5}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Trust}{5}{subsection.2.6}%
+\contentsline {section}{\numberline {3}Criptography}{6}{section.3}%
+\contentsline {section}{\numberline {4}Authentication}{6}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Factors of Authentication}{6}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}To-Know Factor}{6}{subsubsection.4.1.1}%

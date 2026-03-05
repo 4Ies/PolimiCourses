@@ -1,0 +1,44 @@
+Firstly, let's define the difference between \textbf{identification} and 
+\textbf{authentication}.
+\begin{key}{Authentication}
+    Authentication is prooving that an entity is identifying itself correctly.
+\end{key}
+As an example, identification is inserting the username, authentication is 
+correctly write the password: this is an example of \textbf{unidirectional}
+authentication, but there may exists also mutual/bidirectional authentications.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{Images/2Auth.png}
+    \caption{Mutual Authentication}
+\end{figure}
+The entities that enter the process of authentication may be different: i could
+have \textbf{human to human} auth, \textbf{human to computer} and 
+\textbf{computer to computer}.
+
+\subsection{Factors of Authentication}
+To authenticate we need a \textbf{proof of identity}, this may be:
+\begin{itemize}
+    \item Something the entity \textbf{knows} - passowrd, PIN, handshake
+    \item Something the entity \textbf{has} - door key, token
+    \item Something the entity \textbf{is} - face, voice, fingerprints
+\end{itemize}
+
+\subsubsection{To-Know Factor}
+Passwords and PINs are \textbf{easy to deploy and to implement} with 
+\textbf{low implementation costs} (code is "free"): the main problem of 
+passwords is that they are easy to be obtained by an attacker. 
+\begin{itemize}
+    \item \textbf{Guessing} - an attacker can guess a password by identifying similar 
+    common patterns between different passwords 
+    \item \textbf{Stealing} - a flying note on the office can be always stolen
+    \item \textbf{Brute Forcing} - numerous attempts to decode the passwords
+\end{itemize}
+Also, a data breach made by someone that steals my password for a domain can
+be used for accessing with the same keyword to a different domain (mixture of
+guessing and stealing)\newline
+How can we make the password authentication process more secure as developers?
+\begin{itemize}
+    \item Change them continuously
+    \item Make them long
+    \item Make them complex with special and non-repeatable characters
+\end{itemize}

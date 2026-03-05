@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.11.19)  2 MAR 2026 21:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.11.19)  5 MAR 2026 13:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -616,24 +616,24 @@ File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 ) (./ComputerSecurity.aux)
 \openout1 = `ComputerSecurity.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -688,17 +688,17 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 65.
+Package hyperref Info: Link coloring OFF on input line 66.
  (./ComputerSecurity.out) (./ComputerSecurity.out)
 \@outlinefile=\write4
 \openout4 = `ComputerSecurity.out'.
 
 \c@lstlisting=\count342
-LaTeX Font Info:    Trying to load font information for U+msa on input line 67.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 68.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 67.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 68.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (./ComputerSecurity.toc)
@@ -708,37 +708,48 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./Chapters//0Prefazione.tex) (./Chapters//1Introduction.tex [2]
-<Images/1Lockpicking.png, id=123, 1074.0125pt x 693.59125pt>
+<Images/1Lockpicking.png, id=153, 1074.0125pt x 693.59125pt>
 File: Images/1Lockpicking.png Graphic file (type png)
 <use Images/1Lockpicking.png>
-Package pdftex.def Info: Images/1Lockpicking.png  used on input line 53.
+Package pdftex.def Info: Images/1Lockpicking.png  used on input line 50.
 (pdftex.def)             Requested size: 318.66948pt x 205.79297pt.
  [3
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.93 \end{key}
-               <./Images/1Lockpicking.png>] [4]) [5] (./ComputerSecurity.aux)
+l.90 \end{key}
+               <./Images/1Lockpicking.png>] [4] [5]) (./Chapters//2Criptography.tex) (./Chapters//3Authentication.tex
+<Images/2Auth.png, id=173, 1147.28625pt x 220.825pt>
+File: Images/2Auth.png Graphic file (type png)
+<use Images/2Auth.png>
+Package pdftex.def Info: Images/2Auth.png  used on input line 11.
+(pdftex.def)             Requested size: 409.71692pt x 78.86009pt.
+ [6
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.41     \item
+               Change them continuously <./Images/2Auth.png>]) [7] (./ComputerSecurity.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 Package rerunfilecheck Info: File `ComputerSecurity.out' has not changed.
-(rerunfilecheck)             Checksum: 3FDEC6759E5EF39E7FD2E95818B5FDF5;2169.
+(rerunfilecheck)             Checksum: 6952C065361548B4A52CE5219251AA26;3091.
  ) 
 Here is how much of TeX's memory you used:
- 28899 strings out of 476064
- 577486 string characters out of 5792852
- 1936975 words of memory out of 5000000
- 50429 multiletter control sequences out of 15000+600000
+ 28939 strings out of 476064
+ 578376 string characters out of 5792852
+ 1937975 words of memory out of 5000000
+ 50454 multiletter control sequences out of 15000+600000
  566597 words of font info for 68 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
- 93i,12n,99p,515b,613s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 93i,12n,99p,515b,611s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </home/alecs/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1095.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on ComputerSecurity.pdf (5 pages, 576913 bytes).
+Output written on ComputerSecurity.pdf (7 pages, 608049 bytes).
 PDF statistics:
- 180 PDF objects out of 1000 (max. 8388607)
- 132 compressed objects within 2 object streams
- 22 named destinations out of 1000 (max. 500000)
- 266 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 225 PDF objects out of 1000 (max. 8388607)
+ 173 compressed objects within 2 object streams
+ 31 named destinations out of 1000 (max. 500000)
+ 319 words of extra memory for PDF output out of 10000 (max. 10000000)
 

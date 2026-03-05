@@ -1,8 +1,8 @@
 # Fdb version 4
-["pdflatex"] 1772485215.03452 "/home/alecs/Documents/Polimi - Magistrale/Template/main.tex" "main.pdf" "main" 1772485215.48264 0
+["pdflatex"] 1772713271.97906 "/home/alecs/Documents/Polimi - Magistrale/Template/main.tex" "main.pdf" "main" 1772713272.59675 0
   "/etc/texmf/web2c/texmf.cnf" 1747817779.627 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/alecs/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1095.600pk" 1768298287.15549 12644 1520869d24c33336b0d40dadf20fc9f1 ""
-  "/home/alecs/Documents/Polimi - Magistrale/Template/main.tex" 1772485214.41717 1566 c5f138fba4dbecc058e1a0d44055837b ""
+  "/home/alecs/Documents/Polimi - Magistrale/Template/main.tex" 1772713271.77099 1594 a8c83a849d102d35b5abeb8a95d81ff5 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1095.tfm" 1136768653 1536 02c06700a42be0f5a28664c7273f82e7 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -193,10 +193,10 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1763560969 6881282 e4fed784ceacbe889f0a5e7642616e39 ""
   "Chapters//0Prefazione.tex" 1772485212.00525 648 8d90a9fa52a3ebaf95c29b76c8081c60 ""
   "Chapters//1Introduction.tex" 1772485159.74131 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "main.aux" 1772485215.44298 690 1bb654f47cc8ff4ad188ffe4b5efd91a "pdflatex"
-  "main.out" 1772485215.44298 400 793f8d43120187a34de8eb76d0df2881 "pdflatex"
-  "main.tex" 1772485214.41717 1566 c5f138fba4dbecc058e1a0d44055837b ""
-  "main.toc" 1772485215.44405 314 cb10a60f7e8695789a957cec1e79260c "pdflatex"
+  "main.aux" 1772713272.53499 690 1bb654f47cc8ff4ad188ffe4b5efd91a "pdflatex"
+  "main.out" 1772713272.53499 400 793f8d43120187a34de8eb76d0df2881 "pdflatex"
+  "main.tex" 1772713271.77099 1594 a8c83a849d102d35b5abeb8a95d81ff5 ""
+  "main.toc" 1772713272.53583 314 cb10a60f7e8695789a957cec1e79260c "pdflatex"
   (generated)
   "main.aux"
   "main.log"

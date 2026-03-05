@@ -21,7 +21,7 @@ it is.
     A \textbf{Secure System} is a system that requires a lot of effort to be 
     broken.
 \end{key}
-\subsection{Key concepts}
+\subsection{Vulnerabilities and Exploits}
 We firslty need some definitions useful to understand the world of security:
 \begin{itemize}
     \item \textbf{Vulnerability} - It is a shortcut that allows an attacker
@@ -30,9 +30,6 @@ We firslty need some definitions useful to understand the world of security:
     \item \textbf{Exploit} - It is a specific way to use one or more
         vulnerabilities to accomplish a specific objective that violates
         one of the CIA properties.
-    \item \textbf{Asset}
-    \item \textbf{Threat}
-    \item \textbf{Risk}
 \end{itemize}
 \begin{warning}{Understanding what is and what isn't a vulnerability}
     Not all vulnerabilities lookalikes are actual vulnerabilities or mistakes
@@ -147,7 +144,7 @@ knowledge. It becomes clearer and clearer that we need to take decisions:
 we need to balance the urge of damage containment and the reduction of 
 vulnerabilities to the costs they bring. This is \textbf{Security}.
 
-\subsection{Security versus Cost Balance}
+\subsection{Security vs Cost Balance}
 In security we can distinct two different costs:
 \begin{itemize}
     \item \textbf{Direct Costs} - Management, operational and equipment
@@ -161,3 +158,33 @@ phone opened by someone else!)
     When the diminuition of privacy is traded with "more security", since 
     security is composed by privacy, it means something bad is going to happen. 
 \end{warning}
+
+\subsection{More money is not more security}
+Sometimes a more sophisticated approach in trying to solve menaces brings
+only indirect costs: in an airplane, liquids are not allowed over a 100ml 
+capacity but batteries are allowed in almost every size or form, why? Because
+a different approach limiting batteries would make all people avoid taking the
+airplane! \newline
+Lowering the security measures of a system usually doesn't happen because
+someone has to decide to lower it: the blame of the system having a flaw will
+eventually be his/hers.
+
+\subsection{Trust}
+It's hard to give a general definition of trust, in general or by referring
+specifically to computer science.
+In Computer Science, trust in software means that the code i wrote is "secure" 
+(the logic itself is exactly the logic i had in mind) and also that the 
+\textbf{compiled code} does exactly what i want to do: by securing the 
+compiler layer of a piece of software that I wrote, I'm left with other 
+variables that can be deemed to be external (the OS where it gets executed, 
+the hardware that meets the piece of code that i wrote). Because of this 
+complexity in defining what can be secured and what is to be trusted, 
+we make \textbf{assumptions}.
+\begin{key}{Trust Issues}
+    In general security, in any case there will be a moment where my 
+    assumptions cannot be validated further: this defines the 
+    \textbf{trust boundary} of my system and assumptions.
+\end{key}
+The trust boundary depends on our maximum effort to verify if something is 
+trustworthy or not (if we are a small business we will have a smaller trust 
+boundary for an agent than the penthagon).

@@ -14,4 +14,6 @@
 \contentsline {subsubsection}{\numberline {3.3.1}Edge DataCenters}{7}{subsubsection.3.3.1}%
 \contentsline {subsubsection}{\numberline {3.3.2}Availability and Uptime}{8}{subsubsection.3.3.2}%
 \contentsline {subsection}{\numberline {3.4}Architectural Overview of WSCs}{8}{subsection.3.4}%
-\contentsline {section}{\numberline {4}Storage}{9}{section.4}%
+\contentsline {section}{\numberline {4}Servers}{9}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Accelerators and ML Era}{10}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Tensor Processing Units}{11}{subsection.4.2}%
