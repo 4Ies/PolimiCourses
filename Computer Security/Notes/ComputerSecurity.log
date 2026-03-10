@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.11.19)  5 MAR 2026 13:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.11.19)  6 MAR 2026 11:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/home/alecs/Documents/Polimi - Magistrale/Computer Security/Notes/ComputerSecurity.tex"
-(/home/alecs/Documents/Polimi - Magistrale/Computer Security/Notes/ComputerSecurity.tex
+**"/home/alecs/Documents/Polimi/Magistrale/Computer Security/Notes/ComputerSecurity.tex"
+(/home/alecs/Documents/Polimi/Magistrale/Computer Security/Notes/ComputerSecurity.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -616,24 +616,24 @@ File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 ) (./ComputerSecurity.aux)
 \openout1 = `ComputerSecurity.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -688,17 +688,17 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 66.
+Package hyperref Info: Link coloring OFF on input line 73.
  (./ComputerSecurity.out) (./ComputerSecurity.out)
 \@outlinefile=\write4
 \openout4 = `ComputerSecurity.out'.
 
 \c@lstlisting=\count342
-LaTeX Font Info:    Trying to load font information for U+msa on input line 68.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 75.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 68.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 75.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (./ComputerSecurity.toc)
@@ -708,7 +708,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./Chapters//0Prefazione.tex) (./Chapters//1Introduction.tex [2]
-<Images/1Lockpicking.png, id=153, 1074.0125pt x 693.59125pt>
+<Images/1Lockpicking.png, id=168, 1074.0125pt x 693.59125pt>
 File: Images/1Lockpicking.png Graphic file (type png)
 <use Images/1Lockpicking.png>
 Package pdftex.def Info: Images/1Lockpicking.png  used on input line 50.
@@ -719,7 +719,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has
                                                   \__shipout_drop_firstpage_...
 l.90 \end{key}
                <./Images/1Lockpicking.png>] [4] [5]) (./Chapters//2Criptography.tex) (./Chapters//3Authentication.tex
-<Images/2Auth.png, id=173, 1147.28625pt x 220.825pt>
+<Images/2Auth.png, id=188, 1147.28625pt x 220.825pt>
 File: Images/2Auth.png Graphic file (type png)
 <use Images/2Auth.png>
 Package pdftex.def Info: Images/2Auth.png  used on input line 11.
@@ -729,27 +729,38 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.41     \item
-               Change them continuously <./Images/2Auth.png>]) [7] (./ComputerSecurity.aux)
+               \textbf{Change} them continuously <./Images/2Auth.png>]
+<Images/3ChallengeResponse.png, id=195, 1244.65pt x 350.30875pt>
+File: Images/3ChallengeResponse.png Graphic file (type png)
+<use Images/3ChallengeResponse.png>
+Package pdftex.def Info: Images/3ChallengeResponse.png  used on input line 59.
+(pdftex.def)             Requested size: 455.24411pt x 128.12622pt.
+ [7
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.84     \item
+               \textbf{One-Time Password Generators} - user has a device with a <./Images/3ChallengeResponse.png>]) [8] (./ComputerSecurity.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 Package rerunfilecheck Info: File `ComputerSecurity.out' has not changed.
-(rerunfilecheck)             Checksum: 6952C065361548B4A52CE5219251AA26;3091.
+(rerunfilecheck)             Checksum: D1FDC747CF4CCD35447089616894B80F;3431.
  ) 
 Here is how much of TeX's memory you used:
- 28939 strings out of 476064
- 578376 string characters out of 5792852
- 1937975 words of memory out of 5000000
- 50454 multiletter control sequences out of 15000+600000
+ 28965 strings out of 476064
+ 578917 string characters out of 5792852
+ 1938975 words of memory out of 5000000
+ 50475 multiletter control sequences out of 15000+600000
  566597 words of font info for 68 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
- 93i,12n,99p,515b,611s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 93i,12n,99p,513b,611s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </home/alecs/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1095.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on ComputerSecurity.pdf (7 pages, 608049 bytes).
+Output written on ComputerSecurity.pdf (8 pages, 658897 bytes).
 PDF statistics:
- 225 PDF objects out of 1000 (max. 8388607)
- 173 compressed objects within 2 object streams
- 31 named destinations out of 1000 (max. 500000)
- 319 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 247 PDF objects out of 1000 (max. 8388607)
+ 192 compressed objects within 2 object streams
+ 36 named destinations out of 1000 (max. 500000)
+ 348 words of extra memory for PDF output out of 10000 (max. 10000000)
 

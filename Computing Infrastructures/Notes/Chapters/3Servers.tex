@@ -77,3 +77,31 @@ device specialized in ML training: by having next to zero overhead efficiency
 is maximized.
 
 Go on until page 45
+
+\subsection{Field-Programmable Gate Arrays}
+It's a programmable chip made up by logic blocks (CLBs) that can be instructed
+to change signals and connections between them: it's in the exact middle of 
+general purpose hardware and specific hardcoded hardware, we're ending up 
+programming not the software but the hardware. The tradeoff is the limit of 
+density of logic that can be present inside said FPGA (specific hardware still
+supports way more density).
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{Images/13FPGA.png}
+    \caption{FPGA general scheme}
+\end{figure}
+They are amazing for custom logic hardware where there will be an evolution 
+(being customizable) and it's perfect for small logic components (since 
+complex logic needs that the CLBs must be connected several times with 
+a possible bottleneck on chip-to-chip communication) and for small memory 
+ones.
+
+\subsection{DC Architecture}
+Servers in Data Centers are \textbf{never} placed back-to-back because of 
+\textbf{cooling}: they are usually split into cold (where the user reaches 
+the server) and warm aisles. Several solutions are possible. 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{Images/14Cooling.png}
+    \caption{FPGA general scheme}
+\end{figure}

@@ -17,3 +17,13 @@
 \contentsline {section}{\numberline {4}Servers}{9}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Accelerators and ML Era}{10}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Tensor Processing Units}{11}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Field-Programmable Gate Arrays}{11}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}DC Architecture}{12}{subsection.4.4}%
+\contentsline {section}{\numberline {5}Storage}{12}{section.5}%
+\contentsline {subsection}{\numberline {5.1}HDD}{13}{subsection.5.1}%
+\contentsline {subsubsection}{\numberline {5.1.1}Quick summary on the basis of a file system}{13}{subsubsection.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.2}All Delays}{15}{subsubsection.5.1.2}%
+\contentsline {subsubsection}{\numberline {5.1.3}Caching and Scheduling}{17}{subsubsection.5.1.3}%
+\contentsline {subsection}{\numberline {5.2}SSD}{18}{subsection.5.2}%
+\contentsline {subsubsection}{\numberline {5.2.1}Performance Issues}{18}{subsubsection.5.2.1}%
+\contentsline {subsubsection}{\numberline {5.2.2}Flash Transition Layer}{20}{subsubsection.5.2.2}%

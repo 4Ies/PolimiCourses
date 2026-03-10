@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.11.19)  5 MAR 2026 13:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.11.19)  10 MAR 2026 17:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/home/alecs/Documents/Polimi - Magistrale/Computing Infrastructures/Notes/ComputingInfrastructures.tex"
-(/home/alecs/Documents/Polimi - Magistrale/Computing Infrastructures/Notes/ComputingInfrastructures.tex
+**"/home/alecs/Documents/Polimi/Magistrale/Computing Infrastructures/Notes/ComputingInfrastructures.tex"
+(/home/alecs/Documents/Polimi/Magistrale/Computing Infrastructures/Notes/ComputingInfrastructures.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -708,13 +708,13 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./Chapters//0Prefazione.tex) (./Chapters//1Datacenters.tex
-<Images/1DatacenterTypes.png, id=143, 1138.2525pt x 521.95pt>
+<Images/1DatacenterTypes.png, id=194, 1138.2525pt x 521.95pt>
 File: Images/1DatacenterTypes.png Graphic file (type png)
 <use Images/1DatacenterTypes.png>
 Package pdftex.def Info: Images/1DatacenterTypes.png  used on input line 31.
 (pdftex.def)             Requested size: 364.19667pt x 167.00351pt.
  [2]
-<Images/2ComputingInfrastructures.png, id=150, 1495.5875pt x 617.30624pt>
+<Images/2ComputingInfrastructures.png, id=201, 1495.5875pt x 617.30624pt>
 File: Images/2ComputingInfrastructures.png Graphic file (type png)
 <use Images/2ComputingInfrastructures.png>
 Package pdftex.def Info: Images/2ComputingInfrastructures.png  used on input line 55.
@@ -730,13 +730,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has
                                                   \__shipout_drop_firstpage_...
 l.62 \subsubsection
                    {Data Centers} <./Images/1DatacenterTypes.png> <./Images/2ComputingInfrastructures.png>]
-<Images/3DataCentersGeneric.png, id=159, 1040.88875pt x 647.41875pt>
+<Images/3DataCentersGeneric.png, id=210, 1040.88875pt x 647.41875pt>
 File: Images/3DataCentersGeneric.png Graphic file (type png)
 <use Images/3DataCentersGeneric.png>
 Package pdftex.def Info: Images/3DataCentersGeneric.png  used on input line 65.
 (pdftex.def)             Requested size: 364.19667pt x 226.52092pt.
 ) (./Chapters//2DataCenterAsAComputer.tex
-<Images/4SmallerClients.png, id=160, 773.89125pt x 229.85875pt>
+<Images/4SmallerClients.png, id=211, 773.89125pt x 229.85875pt>
 File: Images/4SmallerClients.png Graphic file (type png)
 <use Images/4SmallerClients.png>
 Package pdftex.def Info: Images/4SmallerClients.png  used on input line 12.
@@ -747,7 +747,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has
                                                   \__shipout_drop_firstpage_...
 l.14 \end{figure}
                   <./Images/3DataCentersGeneric.png>]
-<Images/5WSCvsDatacenters.png, id=167, 1111.15125pt x 676.5275pt>
+<Images/5WSCvsDatacenters.png, id=218, 1111.15125pt x 676.5275pt>
 File: Images/5WSCvsDatacenters.png Graphic file (type png)
 <use Images/5WSCvsDatacenters.png>
 Package pdftex.def Info: Images/5WSCvsDatacenters.png  used on input line 33.
@@ -758,7 +758,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has
                                                   \__shipout_drop_firstpage_...
 l.36 \subsection
                 {...and Back} <./Images/4SmallerClients.png>]
-<Images/6WSCVirtual.png, id=174, 1108.14pt x 480.79625pt>
+<Images/6WSCVirtual.png, id=225, 1108.14pt x 480.79625pt>
 File: Images/6WSCVirtual.png Graphic file (type png)
 <use Images/6WSCVirtual.png>
 Package pdftex.def Info: Images/6WSCVirtual.png  used on input line 44.
@@ -774,12 +774,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) has
                                                   \__shipout_drop_firstpage_...
 l.59     \item \textbf
                       {Computer Regions (CRs)} - a finer grain of location: ... <./Images/5WSCvsDatacenters.png> <./Images/6WSCVirtual.png>]
-<Images/7Azure.png, id=184, 910.40125pt x 586.19pt>
+<Images/7Azure.png, id=234, 910.40125pt x 586.19pt>
 File: Images/7Azure.png Graphic file (type png)
 <use Images/7Azure.png>
 Package pdftex.def Info: Images/7Azure.png  used on input line 69.
 (pdftex.def)             Requested size: 364.19667pt x 234.49867pt.
-<Images/8EdgeDC.png, id=185, 1085.05376pt x 634.37pt>
+<Images/8EdgeDC.png, id=235, 1085.05376pt x 634.37pt>
 File: Images/8EdgeDC.png Graphic file (type png)
 <use Images/8EdgeDC.png>
 Package pdftex.def Info: Images/8EdgeDC.png  used on input line 80.
@@ -790,7 +790,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) has
                                                   \__shipout_drop_firstpage_...
 l.84 
       <./Images/7Azure.png>]
-<Images/9WSCArchitecture.png, id=193, 1019.81pt x 665.48625pt>
+<Images/9WSCArchitecture.png, id=243, 1019.81pt x 665.48625pt>
 File: Images/9WSCArchitecture.png Graphic file (type png)
 <use Images/9WSCArchitecture.png>
 Package pdftex.def Info: Images/9WSCArchitecture.png  used on input line 96.
@@ -806,7 +806,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) has
                                                   \__shipout_drop_firstpage_...
 l.107     \item \textbf
                        {Networking} - also called \textbf{DCN} (DataCenter N... <./Images/8EdgeDC.png> <./Images/9WSCArchitecture.png>]) (./Chapters//3Servers.tex
-<Images/10ServerArchitecture.png, id=202, 999.735pt x 681.54625pt>
+<Images/10ServerArchitecture.png, id=252, 999.735pt x 681.54625pt>
 File: Images/10ServerArchitecture.png Graphic file (type png)
 <use Images/10ServerArchitecture.png>
 Package pdftex.def Info: Images/10ServerArchitecture.png  used on input line 4.
@@ -817,12 +817,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) ha
                                                   \__shipout_drop_firstpage_...
 l.34 
       <./Images/10ServerArchitecture.png>]
-<Images/11ServerTypes.png, id=209, 999.735pt x 681.54625pt>
+<Images/11ServerTypes.png, id=259, 999.735pt x 681.54625pt>
 File: Images/11ServerTypes.png Graphic file (type png)
 <use Images/11ServerTypes.png>
 Package pdftex.def Info: Images/11ServerTypes.png  used on input line 38.
 (pdftex.def)             Requested size: 364.19667pt x 248.27873pt.
-<Images/12GPUs.png, id=210, 796.9775pt x 551.05875pt>
+<Images/12GPUs.png, id=260, 796.9775pt x 551.05875pt>
 File: Images/12GPUs.png Graphic file (type png)
 <use Images/12GPUs.png>
 Package pdftex.def Info: Images/12GPUs.png  used on input line 62.
@@ -832,32 +832,125 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.11}) ha
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.65 A
-      ppropriate languages are to be used to program on these GPUs, such as ... <./Images/11ServerTypes.png>]) [11
+      ppropriate languages are to be used to program on these GPUs, such as ... <./Images/11ServerTypes.png>]
+<Images/13FPGA.png, id=267, 482.80376pt x 327.2225pt>
+File: Images/13FPGA.png Graphic file (type png)
+<use Images/13FPGA.png>
+Package pdftex.def Info: Images/13FPGA.png  used on input line 90.
+(pdftex.def)             Requested size: 273.14923pt x 185.1357pt.
+ [11
 pdfTeX warning (ext4): destination with the same identifier (name{figure.12}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.82 \end{document}
-                    <./Images/12GPUs.png>] (./ComputingInfrastructures.aux)
+l.93 T
+      hey are amazing for custom logic hardware where there will be an evolu... <./Images/12GPUs.png>]
+<Images/14Cooling.png, id=274, 1247.66125pt x 227.85126pt>
+File: Images/14Cooling.png Graphic file (type png)
+<use Images/14Cooling.png>
+Package pdftex.def Info: Images/14Cooling.png  used on input line 105.
+(pdftex.def)             Requested size: 455.24411pt x 83.13545pt.
+) (./Chapters//4Storage.tex
+<Images/15Data.png, id=275, 999.735pt x 751.80875pt>
+File: Images/15Data.png Graphic file (type png)
+<use Images/15Data.png>
+Package pdftex.def Info: Images/15Data.png  used on input line 24.
+(pdftex.def)             Requested size: 423.94617pt x 318.80898pt.
+ [12
+pdfTeX warning (ext4): destination with the same identifier (name{figure.13}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.28  \subsection
+                 {HDD}
+pdfTeX warning (ext4): destination with the same identifier (name{figure.14}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.28  \subsection
+                 {HDD} <./Images/13FPGA.png> <./Images/14Cooling.png>]
+<Images/16FileSystem.png, id=284, 1115.16624pt x 456.70625pt>
+File: Images/16FileSystem.png Graphic file (type png)
+<use Images/16FileSystem.png>
+Package pdftex.def Info: Images/16FileSystem.png  used on input line 42.
+(pdftex.def)             Requested size: 455.24411pt x 186.43542pt.
+ [13
+pdfTeX warning (ext4): destination with the same identifier (name{figure.15}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.46     \item A
+                 typical file read operation requires to read meta data and ... <./Images/15Data.png>]
+<Images/17HDDs.png, id=292, 1208.515pt x 630.355pt>
+File: Images/17HDDs.png Graphic file (type png)
+<use Images/17HDDs.png>
+Package pdftex.def Info: Images/17HDDs.png  used on input line 75.
+(pdftex.def)             Requested size: 455.24411pt x 237.45018pt.
+ [14
+pdfTeX warning (ext4): destination with the same identifier (name{figure.16}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.78 H
+      DDs have lots of possible delays: <./Images/16FileSystem.png>]
+<Images/18SeekTime.png, id=299, 499.8675pt x 362.35374pt>
+File: Images/18SeekTime.png Graphic file (type png)
+<use Images/18SeekTime.png>
+Package pdftex.def Info: Images/18SeekTime.png  used on input line 104.
+(pdftex.def)             Requested size: 211.97308pt x 153.65826pt.
+ [15
+pdfTeX warning (ext4): destination with the same identifier (name{figure.17}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.113 
+       <./Images/17HDDs.png>] [16
+pdfTeX warning (ext4): destination with the same identifier (name{figure.18}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.158 
+       <./Images/18SeekTime.png>] [17]
+<Images/19Cells.png, id=326, 1130.2225pt x 273.02pt>
+File: Images/19Cells.png Graphic file (type png)
+<use Images/19Cells.png>
+Package pdftex.def Info: Images/19Cells.png  used on input line 204.
+(pdftex.def)             Requested size: 455.24411pt x 109.96843pt.
+<Images/20Blocks1.png, id=327, 528.97626pt x 375.4025pt>
+File: Images/20Blocks1.png Graphic file (type png)
+<use Images/20Blocks1.png>
+Package pdftex.def Info: Images/20Blocks1.png  used on input line 231.
+(pdftex.def)             Requested size: 182.09486pt x 129.22758pt.
+ [18
+pdfTeX warning (ext4): destination with the same identifier (name{figure.19}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.232 \end{figure}
+                   <./Images/19Cells.png>]
+<Images/21Blocks2.png, id=335, 525.965pt x 483.8075pt>
+File: Images/21Blocks2.png Graphic file (type png)
+<use Images/21Blocks2.png>
+Package pdftex.def Info: Images/21Blocks2.png  used on input line 237.
+(pdftex.def)             Requested size: 182.09486pt x 167.49696pt.
+<Images/22Blocks3.png, id=336, 528.97626pt x 483.8075pt>
+File: Images/22Blocks3.png Graphic file (type png)
+<use Images/22Blocks3.png>
+Package pdftex.def Info: Images/22Blocks3.png  used on input line 243.
+(pdftex.def)             Requested size: 182.09486pt x 166.54465pt.
+) [19 <./Images/20Blocks1.png> <./Images/21Blocks2.png> <./Images/22Blocks3.png>] [20] (./ComputingInfrastructures.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 Package rerunfilecheck Info: File `ComputingInfrastructures.out' has not changed.
-(rerunfilecheck)             Checksum: 9FA817929EEE9221F0393AB319A8FCC8;2811.
+(rerunfilecheck)             Checksum: D7E3D70B7C1C0CE9C625EFC078A70A68;4343.
  ) 
 Here is how much of TeX's memory you used:
- 29009 strings out of 476064
- 580821 string characters out of 5792852
- 1935975 words of memory out of 5000000
- 50513 multiletter control sequences out of 15000+600000
+ 29149 strings out of 476064
+ 583812 string characters out of 5792852
+ 1941975 words of memory out of 5000000
+ 50618 multiletter control sequences out of 15000+600000
  566429 words of font info for 67 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
- 93i,12n,99p,531b,572s stack positions out of 10000i,1000n,20000p,200000b,200000s
- </home/alecs/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1095.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on ComputingInfrastructures.pdf (11 pages, 3833231 bytes).
+ 93i,12n,99p,529b,572s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ </home/alecs/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1095.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on ComputingInfrastructures.pdf (20 pages, 5097194 bytes).
 PDF statistics:
- 259 PDF objects out of 1000 (max. 8388607)
- 187 compressed objects within 2 object streams
- 43 named destinations out of 1000 (max. 500000)
- 361 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 407 PDF objects out of 1000 (max. 8388607)
+ 297 compressed objects within 3 object streams
+ 75 named destinations out of 1000 (max. 500000)
+ 491 words of extra memory for PDF output out of 10000 (max. 10000000)
 
