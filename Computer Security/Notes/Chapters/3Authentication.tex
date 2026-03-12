@@ -111,9 +111,79 @@ There are also a lot of \textbf{scam attacks} and \textbf{impersonating thefts}
 linked with physical devices (see the SIM scam).
 
 \subsection{To-Be Factor}
-The most common ways to authenticate nowadays are linked to identity as 
+Nowadays the most common ways to authenticate are linked to identity as 
 \textbf{something we have}, biometric authentication: this has a high level of
 security and requires no extra hardware to carry around (we are the key!). 
+Another important thing is that it's \textbf{effortless}: since humans are not
+keen to normally authenticate during their lifespan this is a big advantage 
+and this is the main reason that led biometrics to be the most used form of 
+authentication used by humans. \newline  
 There are a lot of issues linked to this particular factor: it's \textbf{hard
 to deploy safely}, has an \textbf{invasive approach} thanks to its nature, it
-\textbf{can be cloned} and also \textbf{changes overtime}
+\textbf{can be cloned} and also the biometrics \textbf{change overtime}. The 
+main characteristics that can be used in biometrics authentication are:
+\begin{itemize}
+    \item \textbf{Fingerprints}
+    \item \textbf{Face geometry}
+    \item \textbf{Palm print} (hands are unique in human beings!)
+    \item \textbf{Retina scan} (internal part of the eye, including 
+    blood vessels)
+    \item \textbf{Iris scan} (colored part of the eye, unique pigmentations 
+    and defects)
+    \item \textbf{Voice analysis} (with lots of difficulties)
+    \item \textbf{DNA} (with the exception of identical twins)
+\end{itemize}
+\begin{notice}{How we are and how we act}
+    There are charateristics that define \textbf{how we act} (like how we 
+    walk, how we write), but those characteristics are hard to measure in
+    computer systems.
+\end{notice}
+
+The main problems tied with this type of authentication is 
+\textbf{portability}: not all devices use a specific scanner to analyze
+a certain type of human characteristic. It's also \textbf{costly} both 
+to integrate in our daily technologies and also intrisically (retina scanners
+cost a lot). Also, the main disadvantage of biometrics is that it is
+\textbf{probabilistic and non-deterministic}: if passwords are either right
+or wrong biometric measurements rely on tresholds and false positives and 
+negatives (here called \textbf{false acceptances} and \textbf{false 
+rejections}). Obviously \textbf{false acceptances are a vulnerability} but 
+false rejections are the true effort-generators (users with their phones do 
+not experience false acceptances, but only false rejections!): the main 
+objective of a programmer should be to define the right \textbf{threshold}
+that lowers enough the false acceptances and still doesn't piss off the user 
+by making him unlock the smartphone 5 times (false acceptances are 
+\textbf{high} on smartphones, but on purpose!).
+
+\begin{warning}{Single-User Devices Threat Models}
+    Single-user devices are meant to have cheap authentication sensors because
+    the threat model of a smartphone is composed by thieves, family members, 
+    law enforcment: depending on our status (VIPs or not) a thief will not try
+    to unlock the system, family members will not try to do us damage (but if
+    they want to, they will and they would be \textbf{unstoppable}) so they do 
+    not make up to our threat model, also law enforcement are not part of the 
+    threat model analyzed (too powerful to defend against). Against thieves, 
+    this is designed correctly.
+\end{warning}
+
+Another big flaw is that we have 10 fingers  only: \textbf{cloning} is the
+main flaw of biometrics, once someone gets the characteristics of how we are, 
+we get completely \textbf{violated} (the design of biometric authentication 
+is complex: where do i store the data that defines who i am? How can i 
+defend this from attacks? Is it to valuable to store this? If someone 
+steals this information what is the damage?).
+
+\begin{notice}{A Take on Global Security}
+    \textbf{When interests are not aligned, vulnerabilities start to emerge.}
+    \newline
+    Facebook uses OAuth2 as a common way to authenticate, generating tokens
+    that \textbf{never} expire: is this a secure way to authenticat? The answer
+    is a big \textbf{yes for Facebook}, since their business model is made to 
+    target and analyze the user interests, and a big \textbf{no for us users},
+    since the token once stolen can be used by someone else without us 
+    noticing. Keep in mind that in the real world \textbf{this is exactly
+    how it should be done} and this is why Facebook had such success: because
+    it \textbf{doesn't care about single user accounts}, but only their 
+    informations and habits. In this case, the vulnerability that is generated
+    is on our side.
+\end{notice}

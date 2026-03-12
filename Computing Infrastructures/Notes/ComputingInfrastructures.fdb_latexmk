@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1773161796.21188 "/home/alecs/Documents/Polimi/Magistrale/Computing Infrastructures/Notes/ComputingInfrastructures.tex" "ComputingInfrastructures.pdf" "ComputingInfrastructures" 1773161797.88622 0
+["pdflatex"] 1773242157.62592 "/home/alecs/Documents/Polimi/Magistrale/Computing Infrastructures/Notes/ComputingInfrastructures.tex" "ComputingInfrastructures.pdf" "ComputingInfrastructures" 1773242159.66486 0
   "/etc/texmf/web2c/texmf.cnf" 1747817779.627 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/alecs/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1095.600pk" 1768298287.15549 12644 1520869d24c33336b0d40dadf20fc9f1 ""
   "/home/alecs/Documents/Polimi/Magistrale/Computing Infrastructures/Notes/ComputingInfrastructures.tex" 1773143840.97432 1683 80db1ab1da8b1aac6c7226f1fff46dcb ""
@@ -199,11 +199,11 @@
   "Chapters//1Datacenters.tex" 1772484788.41077 4461 8d61a7d9f5d023153019b9655b2aef97 ""
   "Chapters//2DataCenterAsAComputer.tex" 1772537624.98019 5423 5525ac516be3b552956247435acee267 ""
   "Chapters//3Servers.tex" 1773064856.90881 5495 67c06e92aa3a413698759f64566fda64 ""
-  "Chapters//4Storage.tex" 1773161796.02219 11923 40501ee3bf5686a27385ece27699ce75 ""
-  "ComputingInfrastructures.aux" 1773161797.81519 6400 95744aca9ddd41f84d7cc079735a1074 "pdflatex"
-  "ComputingInfrastructures.out" 1773161797.81619 4343 d7e3d70b7c1c0ce9c625efc078a70a68 "pdflatex"
+  "Chapters//4Storage.tex" 1773242157.33697 11923 40501ee3bf5686a27385ece27699ce75 ""
+  "ComputingInfrastructures.aux" 1773242159.58397 6400 95744aca9ddd41f84d7cc079735a1074 "pdflatex"
+  "ComputingInfrastructures.out" 1773242159.58497 4343 d7e3d70b7c1c0ce9c625efc078a70a68 "pdflatex"
   "ComputingInfrastructures.tex" 1773143840.97432 1683 80db1ab1da8b1aac6c7226f1fff46dcb ""
-  "ComputingInfrastructures.toc" 1773161797.81619 2444 99ead2d04a2da0e28fe2487f8ed14d05 "pdflatex"
+  "ComputingInfrastructures.toc" 1773242159.58616 2444 99ead2d04a2da0e28fe2487f8ed14d05 "pdflatex"
   "Images/10ServerArchitecture.png" 1772537787.552 70175 d9b4443bbe99f3e7c113ec04d00b7342 ""
   "Images/11ServerTypes.png" 1772538479.992 285281 ed6b3bdd2181472ca9f080bfa1760753 ""
   "Images/12GPUs.png" 1772541041.51799 281201 4b3fbe064aecd05f0add6a7d8ee7a5ed ""
