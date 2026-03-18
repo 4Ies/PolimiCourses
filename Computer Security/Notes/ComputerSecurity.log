@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.11.19)  12 MAR 2026 12:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.11.19)  13 MAR 2026 11:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -708,7 +708,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./Chapters//0Prefazione.tex) (./Chapters//1Introduction.tex [2]
-<Images/1Lockpicking.png, id=168, 1074.0125pt x 693.59125pt>
+<Images/1Lockpicking.png, id=184, 1074.0125pt x 693.59125pt>
 File: Images/1Lockpicking.png Graphic file (type png)
 <use Images/1Lockpicking.png>
 Package pdftex.def Info: Images/1Lockpicking.png  used on input line 50.
@@ -718,49 +718,60 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.90 \end{key}
-               <./Images/1Lockpicking.png>] [4] [5]) (./Chapters//2Criptography.tex) (./Chapters//3Authentication.tex
-<Images/2Auth.png, id=188, 1147.28625pt x 220.825pt>
+               <./Images/1Lockpicking.png>] [4] [5]) (./Chapters//2Criptography.tex [6] [7]
+<Images/4SymmetricCipher.png, id=217, 1099.10625pt x 747.79375pt>
+File: Images/4SymmetricCipher.png Graphic file (type png)
+<use Images/4SymmetricCipher.png>
+Package pdftex.def Info: Images/4SymmetricCipher.png  used on input line 120.
+(pdftex.def)             Requested size: 409.71692pt x 278.75604pt.
+ [8
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.130     \item \textbf
+                       {Substitution} (Caesar Cipher) - algorithms that invo... <./Images/4SymmetricCipher.png>]) (./Chapters//3Authentication.tex
+<Images/2Auth.png, id=225, 1147.28625pt x 220.825pt>
 File: Images/2Auth.png Graphic file (type png)
 <use Images/2Auth.png>
 Package pdftex.def Info: Images/2Auth.png  used on input line 11.
 (pdftex.def)             Requested size: 409.71692pt x 78.86009pt.
- [6
-pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
+ [9
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.41     \item
-               \textbf{Change} them continuously <./Images/2Auth.png>]
-<Images/3ChallengeResponse.png, id=195, 1244.65pt x 350.30875pt>
+l.23 \end{itemize}
+                   <./Images/2Auth.png>]
+<Images/3ChallengeResponse.png, id=232, 1244.65pt x 350.30875pt>
 File: Images/3ChallengeResponse.png Graphic file (type png)
 <use Images/3ChallengeResponse.png>
 Package pdftex.def Info: Images/3ChallengeResponse.png  used on input line 59.
 (pdftex.def)             Requested size: 455.24411pt x 128.12622pt.
- [7
-pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
+ [10
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.84     \item
-               \textbf{One-Time Password Generators} - user has a device with a <./Images/3ChallengeResponse.png>] [8]) [9] (./ComputerSecurity.aux)
+l.65 
+      <./Images/3ChallengeResponse.png>] [11]) [12] [13] (./ComputerSecurity.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 Package rerunfilecheck Info: File `ComputerSecurity.out' has not changed.
-(rerunfilecheck)             Checksum: D1FDC747CF4CCD35447089616894B80F;3431.
+(rerunfilecheck)             Checksum: 298CC94E8FD1333313E10E3090367527;3851.
  ) 
 Here is how much of TeX's memory you used:
- 28969 strings out of 476064
- 578971 string characters out of 5792852
- 1938975 words of memory out of 5000000
- 50478 multiletter control sequences out of 15000+600000
+ 28999 strings out of 476064
+ 579548 string characters out of 5792852
+ 1939975 words of memory out of 5000000
+ 50499 multiletter control sequences out of 15000+600000
  566597 words of font info for 68 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
  93i,12n,99p,513b,611s stack positions out of 10000i,1000n,20000p,200000b,200000s
- </home/alecs/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1095.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on ComputerSecurity.pdf (9 pages, 664478 bytes).
+ </home/alecs/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1095.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on ComputerSecurity.pdf (13 pages, 782443 bytes).
 PDF statistics:
- 254 PDF objects out of 1000 (max. 8388607)
- 198 compressed objects within 2 object streams
- 37 named destinations out of 1000 (max. 500000)
- 348 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 317 PDF objects out of 1000 (max. 8388607)
+ 244 compressed objects within 3 object streams
+ 46 named destinations out of 1000 (max. 500000)
+ 377 words of extra memory for PDF output out of 10000 (max. 10000000)
 

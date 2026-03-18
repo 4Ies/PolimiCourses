@@ -1,0 +1,152 @@
+Criptography overlaps constantly with cybesecurity: they share a lot of
+common fields of study and the same keen objective of making secrets.
+\begin{key}{Cryptography}
+    Cryptography is, from greece kryptos + graphein, the \textbf{art of secret
+    writing}: it has been used mostly for commercial and military interests.
+\end{key}
+Examples of criptated messages exist from the moment writing was invented
+(writing itself was a form of secrecy): there existed several physical
+ciphers in past times that had lots of vulnerabilites. They could be
+\textbf{stolen}, the secret was \textbf{shared} (so if i stole this secret
+his friend would not know that i am \textbf{faking} to be his friend) and
+once an enemy figured out said secret he can \textbf{read past messages}.
+The best solution would be to \textbf{change the secret}, but from now on
+the enemy knows how the secret is formed and will try to \textbf{brute 
+force it}. 
+In the real world we must assume that all threat agents know the algorithm used
+to encrypt the messages: the only thing that is left unknown is the key.
+Kerckhoffs, a matematitian, stated the principles for a good cipher, some
+of them are:
+\begin{itemize}
+    \item It must be practically (if not mathematically) unbreakable
+    \item The key must be communicable without written notes and changeable
+    whenever the correspondant want
+    \item \textbf{It should be possible to make it public, even to the enemy}
+\end{itemize} 
+\begin{key}{Kerckhoffs' Principle}
+    The security of a cryptosystem relies only on the secrecy of the key and
+    never on the secrecy of the algorithm
+\end{key}
+Another mathematitian that contributed to this world is \textbf{Shannon}, 
+that demonstrates how unbreakable ciphers exist: the main problem is that 
+all those ciphers are \textbf{impractical}: thankfully \textbf{Nash} 
+demonstrated that good ciphers are enough in real world cases. If we consider 
+a cipher with a key of length $\lambda$ bits, the effort of
+brute 
+
+\subsection{Definitions}
+\begin{key}{Data}
+    Data is defined in cryptography as the union of:
+    \begin{itemize}
+        \item \textbf{Plaintext space} - the set of possible messages, usually
+        $\{ 0,1\}^l$ where $l$ is the length of the message
+        \item \textbf{Ciphertext space} - the set of possible ciphertext, 
+        usually $\{ 0,1\} ^{l'}$ where usually $l' \ge l$
+        \item \textbf{Key space} - the set of possible keys, usually 
+        $\{ 0,1\}^\lambda$ where $\lambda$ is the length of the key
+    \end{itemize}
+\end{key}
+
+\begin{key}{Functions}
+    The functions used in cryptography are:
+    \begin{itemize}
+        \item \textbf{Encryption Function} - P x K $\rightarrow$ C
+        \item \textbf{Decryption Function} - C x K $\rightarrow$ P
+    \end{itemize}
+\end{key}
+
+There are several types of attacks made to break a cryptosystem:
+\begin{itemize}
+    \item \textbf{Ciphertext only attacks} - when the analyst has only 
+    ciphertext
+    \item \textbf{Known plaintext attack} - when the analyst has a set of
+    pairs plaintext-ciphertext
+    \item \textbf{Chosen plaintext attack} - analyst can choose plaintexts 
+    and obtain their respective ciphertexts
+\end{itemize}
+Remember: those attacks are used by criptographers to check whether a cipher is
+secure or not, not by cybersecurity analysts. We can now define what is a 
+perfect cipher.
+\begin{key}{Perfect Cipher}
+    If we define $P(M=m)$ as the probability of observing a message $m$ by an
+    attacker and $P(M=m|C=c)$ as the probability that once observed a 
+    ciphertext $c$ the message was actually $m$, we can define a 
+    \textbf{perfect cypher} as one that has:
+    \begin{equation}
+        P(M=m|C=c) = P(M=m)
+    \end{equation}
+\end{key}
+This actually means that an external observer that watches $m$ learns 
+\textbf{nothing}: the bad news is that this definition is 
+\textbf{non-constructive} (we don't know what a perfect cipher looks like)
+
+\subsection{Shannon's Theorem}
+Suppose we have a simple plaintext (of two bits, so 4 possible messages)
+and suppose we have an encryption algorithm that ciphers the messages:
+our key to encrypt must be at least 2 bit long (a one bit long key would
+translate only two messages, where i have four) to correctly map inputs to 
+outputs. If i'm an attacker and i know that the key has perfect mapping from
+input to output once i see one pair cripted + key = message i already have
+information that i will need only three keys to completely decode the system
+(so i could start guessing something and i will know from now on that said key
+encodes what i saw).  
+
+\begin{key}{Shannon's Theorem}
+    Any symmetric encryption is perfectly secure if
+    \begin{itemize}
+        \item every key is used with probability $\frac{1}{|k|}$
+        \item a unique key always maps a plaintext with a unique ciphertext
+    \end{itemize}
+\end{key}
+\textbf{Those encryptions are completely impractical!} Those enter the category
+of One Time Passwords where once a key is used it gets thrown away every time!
+The main problem is how can we share this key secretly, a thing that is 
+impossible nowadays: the practical derivation to this theorem is to find a
+way to encript a message with a function so hard to reverse it would take
+lots of effort. What we need to do as cryptographers of today is:
+\begin{itemize}
+    \item Define the ideal attacker behaviour
+    \item Assume a hard given computational problem (discrete logs, nonlinear
+    boolean equations, large integers factoring, etc)
+    \item Prove that any non ideal attacker solves said hard problem
+\end{itemize}
+At this point it is possible to break the system (the cipher is not perfect),
+a system is deemed \textbf{broken} if it can guess the message without solving
+the hard problem and with a probability that is better than random.
+
+\subsection{Symmetric Encryption}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{Images/4SymmetricCipher.png}
+    \caption{Symmetric Encryption}
+\end{figure}
+Alice and Bob share a \textbf{common key} through a secret trusted channel,
+then communicate using a public and not secure channel by using the secret 
+to encrypt and decrypt the plaintext: obviusly the main problem lies in the 
+\textbf{sharing} of the key, it's difficult to share the secret in a dedicated
+secure channel. This mechanism has the major issue of \textbf{scalability}: 
+the cipher algorithm used in this case are generally \textbf{weak}.
+\begin{itemize}
+    \item \textbf{Substitution} (Caesar Cipher) - algorithms that involve the
+    substitution of each letter with a counterpart: many issues lie with
+    this technique since having only 26 letters for text messages it's 
+    fast to brute force it
+    \item \textbf{Transposition} (Matrix) - algorithms that involve the 
+    swapping of the values of given bits: now repetitions are gone but 
+    keyspace is still relatively small
+\end{itemize}
+Some modern examples use a mix of substitution and transposition:
+\begin{itemize}
+    \item DES - 56bit key, with  a $2^{56}$ long keyspace, redone after 
+    differential cryptanalysis was discovered in the late 80s (maybe)
+    \item IDEA
+    \item BlowFish
+    \item RC5
+    \item CAST-128
+    \item Rijndael - the current standard since 2000
+\end{itemize}
+\begin{notice}{Keyspace and Bruteforcing}
+    Keyspace is measured in bits and usually is the direct consecquence
+    of attack time during brute force attacks: 33bits of keyspace require
+    twice the time to be brute forced than 32bits.
+\end{notice}

@@ -259,3 +259,257 @@ look like an HDD: it comes with \textbf{data allocation and address translation}
 (useful to prevent write amplification effects), \textbf{garbage collection}
 (to better reuse pages with old data) and \textbf{wear leveling} (SSD wears
 overtime, it's a technology with a known obsolescence limit).
+\begin{itemize}
+    \item \textbf{Garbage Collector} - When an operation of write is done to 
+    overwrite a value stored precedentely, we saw that the SSD does not delete
+    data right away: instead the FTL has a \textbf{table} where every page
+    points to the right memory address, the overwrite actually changes the
+    content of the table to point to the newly written address.
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.8\textwidth]{Images/23Table.png}
+        \caption{Notice: the two \textbf{V}s are actually \textbf{I}s}
+    \end{figure}
+
+    Since we are allowed to delete only whole blocks of memory and not single
+    pages, once we will have enough valid and obsolete pages we will need to
+    \textbf{move away} those valid pages inside a new empty block, then we 
+    can erase the whole blocks with invalid stuff.
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.9\textwidth]{Images/24GarbageCollector.png}
+    \end{figure}
+
+    \begin{notice}{The Ambiguity of Deletion}
+        SSD memories do not delete data: on deletion, new metadata is created
+        to pinpoint valid and invalid blocks (on Linux, the delete function 
+        just deletes the file metadata, not the file itself), a \textbf{trim}
+        command developed by SATA exists to also mark as invalid the pages 
+        that are referred by said metadata.
+    \end{notice}
+
+    \item \textbf{Mapping Table} - the mapping table is actually saved inside
+    the \textbf{DRAM} of the machine for faster reading (so that I just do
+    one access for every entry), this is a problem since if we want to map 
+    a 1TB SSD i would need 1GB of DRAM only for the table: it is possible to
+    do \textbf{block-based mapping} (to reduce the grain) and \textbf{hybrid
+    mapping}
+
+    \begin{itemize}
+        \item \textbf{Block Mapping} - having a greater grain is better for 
+        the table storage, but it means that all operations are now 
+        \textbf{block specific} and not page specific: this could lead to 
+        write and read latency, if the system writes a lot then this method
+        is not suitable
+
+        \item \textbf{Hybrid Mapping} - both page and block tables are 
+        implemented: when a new entry gets inserted in memory then the 
+        page table gets updated. When all pages of a block get inserted,
+        a \textbf{merge} is executed, saving only inside the block table
+        a single address
+
+        \item \textbf{Page Mapping + Caching} - if a program uses only a 
+        region of the SSD, then it is possible to use a cache to store the 
+        active part of the page-mapped FTL
+    \end{itemize} 
+
+    \item \textbf{Wear Leveling} - SSDs try to maintain the data even-spreaded
+    across the whole filesystem so that wear leveling is uniform: cold data 
+    blocks are periodically moved elsewhere (otherwise they will receive 
+    less wear). To do this, each block has an 
+    \textbf{erase/write cycle counter}, the policy becomes to maintain 
+    $|max(\text{EW cycle}-min(\text{EW cycle}))| < e$
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.9\textwidth]{Images/25WearLeveling.png}
+        \caption{A badly managed SSD versus a good managed SSD}
+    \end{figure}
+
+\end{itemize}
+
+\begin{warning}{What is more reliable between SSD and HDD?}
+    \textbf{IT DEPENDS!} There's no yes or no answer to this question, 
+    both pros and cons needs to be discussed.
+    \textbf{REMEMBER THIS IN THE EXAM!}. 
+\end{warning}
+
+\subsection{RAID Disks}
+\begin{key}{What is a RAID Disk}
+    \textbf{Redundant Arrays of Independent Disks} are disk arrays that are 
+    individually considered as several independent disks and, as a whole, 
+    as a single high-performance disk.
+\end{key}
+The key of this paradigm is that a single long request can be cut down to 
+several parallel individual requests, making the system ideally $n$ times
+faster, where $n$ is the number of individual disks.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{Images/26RAID.png}
+    \caption{A}
+\end{figure}
+The main problem is caused by the fact that i have more disks: it means
+that i have a higher probability of a single failure viewing the system as
+a whole. A simple solution to this problem is \textbf{redundancy}, that has
+its cons: i need \textbf{double the disks}.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{Images/27RAIDDuplication.png}
+\end{figure}
+RAID gives the illusion of a big hard drive, but internally it's a 
+\textbf{complex system}: it has its own CPU and software, RAM and non-volatile
+memory, with many configuration options.
+
+\subsubsection{RAID 0}
+Data is written on a single logical disk and splitted in several blocks 
+distributed across the disks according to a \textbf{striping algorithm}:
+it is used for \textbf{performance and capacity} (i can simultaneously
+write and read across all disks) and absolutely not for \textbf{reliability}
+(i lose one disk, i lost all the data), it has the \textbf{lowest cost}.
+\begin{itemize}
+    \item \textbf{Capacity} - $N$, the total sum of all disks' space
+    \item \textbf{Reliability} - 0, if any drive fails data is lost, resulting
+    in MTTDL (Mean Time To Data Loss) = MTTF (Mean Time To Failure)
+    \item \textbf{Sequential Performance} - $N * S$
+    \item \textbf{Random Performance} - $N * R$
+\end{itemize}
+\begin{notice}{Striping and reading}
+    The striping algorithm is pretty simple: it evenly distributes all the 
+    pages inside each disk, if i want to read something having $n$ disks, 
+    i need to calculate
+    the disk and the offset inside it as: $Disk = blockNumber \% n$ and
+    $Offset = blockNumber / n$
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.7\textwidth]{Images/28Striping.png}
+    \end{figure}
+\end{notice}
+It is possible to calculate the so called \textbf{Sequential Transfer Rate}
+($S$)
+
+\subsubsection{RAID 1}
+We can take the concept of RAID 0 and try to make it a bit \textbf{reliable}:
+we \textbf{duplicate each drive}, doing what it is called \textbf{mirroring},
+this results in the same performances of the RAID 0, compromising 
+\textbf{costs} (now doubled).
+\begin{itemize}
+    \item \textbf{Capacity} - $\frac{N}{2}$, half capacity (because of 
+    mirroring)
+    \item \textbf{Reliability} - 1, if you are lucky, $\frac{N}{2}$ can
+    fail before data loss
+    \item \textbf{Sequential Performance} - $\frac{N}{2} * S$, half throughput
+    and half read power
+    \item \textbf{Random Performance} - $N * R$ for random read (can 
+    parallelize across all disks), $\frac{N}{2}*R$ for random write
+\end{itemize}
+\begin{warning}{Consistent Update Problem}
+    When we write, we would like to \textbf{mirror write atomically}:
+    this is really difficult to guarantee in real life scenarios (like 
+    power loss), so some RAID 1 controllers have a \textbf{write-ahead log}
+    so that a recovery procedure is started to recover out-of-sync mirrored
+    copies.
+\end{warning}
+\begin{notice}{Decreasing the cost of Reliability}
+    Is there a way to use more of the $\frac{N}{2}$ space we can use in a 
+    RAID 1 controller? \textbf{Yes, thanks to parity drives (see RAID 4)}
+\end{notice}
+\subsubsection{RAID 0+1 and RAID 1+0}
+RAID levels can be \textbf{combined} in multiple ways to offer 
+\textbf{personalized solutions}: for example, RAID 0+1 and RAID 1+0 can
+be generated with the right architecture. RAID 0+1 requires a minimum of 
+4 drives where after the first failure the model collapses into a RAID 0,
+RAID 1+0 instead is intended for databases with fast writing usage.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{Images/31RAIDCombined3.png}
+\end{figure}
+\begin{notice}{Where's the difference?}
+    Both combined RAIDs have the same performances and store capacity, 
+    the difference lies inside the \textbf{fault tolerance level}: 
+    RAID 0+1 fault tolerance is less, RAID 1+0 is more. When a single
+    disk inside RAID 0+1 fails, the whole RAID 0 model that stands above
+    will completely \textbf{stop working}, whereas if a single disk inside
+    RAID 1+0 fails it will be a single disk and the whole RAID 1 system can 
+    go on securely. \textbf{1+0 is more reliable than 0+1}: with two disk 
+    fails, the systems are \textbf{equally reliable}.
+\end{notice}
+
+\subsubsection{RAID 4}
+RAID 4 takes the reliability of RAID 1 and tries to decrease the space
+used for mirroring by introducing a \textbf{parity drive}, a particular disk
+that stores a common value between all disks that can be used to recover 
+faulty information: the parity disk is \textbf{updated} using \textbf{XOR}ing
+all the disks' contents.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{Images/32RAID4.png}
+    \caption{RAID 4 using a XOR parity disk}
+\end{figure}
+There are two ways to use XOR to update the parity disk: 
+\textbf{additive parity}, where every block is read and the parity block
+becomes the XOR of every value of those blocks (with the updated values),
+and \textbf{subtractive parity}, where only the old parity block, the old
+value of the block that is being modified and the new value that is inserted
+are used in the operation.
+
+\begin{itemize}
+    \item \textbf{Capacity} - $N-1$, because of the parity disk
+    \item \textbf{Reliability} - only \textbf{one drive} can fail before 
+    data loss
+    \item \textbf{Sequential Performance} - $(N-1) * S$, because of 
+    \textbf{parallelization} across all blocks in the stripe
+    \item \textbf{Random Performance} - $(N-1) * R$ for random read (can 
+    parallelize across all disks except parity drive), $\frac{R}{2}$ 
+    for random write (each write requires 1 read and 1 write of the parity
+    drive, causing \textbf{serialization}: the parity update becomes the 
+    bottleneck)
+\end{itemize}
+
+\subsubsection{RAID 5}
+RAID 5 removes the parity drive and evenly distributes the parity blocks
+\textbf{inside the data disks}: since the operation of update is evenly
+distributed to all disks (and not concentrated in a single disk) and 
+the operations made for a single write are 2 reads and 2 writes, random
+write now becomes $\frac{N}{4} * R$
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{Images/33RAID5.png}
+\end{figure}
+
+\begin{itemize}
+    \item \textbf{Capacity} - $N-1$, because of the distributed parity blocks
+    \item \textbf{Reliability} - only \textbf{one drive} can fail before 
+    data loss
+    \item \textbf{Sequential Performance} - $(N-1) * S$, because of 
+    \textbf{parallelization} across all blocks in the stripe
+    \item \textbf{Random Performance} - $N * R$ for random read (can 
+    parallelize across all disks), $\frac{N}{4}*R$ for random write 
+    (each write requires 2 read and 2 write of the parity blocks,
+    now parallelized)
+\end{itemize}
+
+\subsubsection{RAID 6}
+RAID 6 uses the reasoning behind RAID 5, but duplicates the available parity 
+blocks: the overhead becomes of two disks, fault tolerance is amplified since
+two concurrent failures are tolerated. It uses \textbf{Solomon-Reeds codes}
+with two redundancy schemes, making P+Q distributed and independent.
+Obviously, N+2 disks are required and the overhead in writes is amplified:
+each write will require \textbf{6 disk accesses}, both P and Q blocks need to
+be updated. Additionally, a minimum of 4 data disks is necessary in order to
+store valuable informations.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{Images/34RAID6.png}
+\end{figure}
+\begin{itemize}
+    \item \textbf{Capacity} - $N-2$, because of the distributed parity blocks
+    \item \textbf{Reliability} - \textbf{two drives} can fail before 
+    data loss
+    \item \textbf{Sequential Performance} - $(N-2) * S$, because of 
+    \textbf{parallelization} across all blocks in the stripe
+    \item \textbf{Random Performance} - $N * R$ for random read (can 
+    parallelize across all disks), $\frac{N}{6}*R$ for random write 
+    (each write requires 3 read and 3 write of the parity blocks,
+    now parallelized)
+\end{itemize}
